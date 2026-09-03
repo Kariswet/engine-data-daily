@@ -14,8 +14,8 @@ def run_thread(func):
 if __name__ == "__main__":
     service = StockService()
 
-    schedule.every().day.at("17:00").do(run_thread, service.OHLCVdaily)
-    schedule.every().friday.at("17:00").do(run_thread, service.FINANCEreport)
+    schedule.every().day.at("16:00").do(run_thread, service.OHLCVdaily)
+    schedule.every().friday.at("16:00").do(run_thread, service.FINANCEreport)
     
     logger.info("Scheduler started. Waiting for next job at 5pm...")
 
