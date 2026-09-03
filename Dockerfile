@@ -13,3 +13,5 @@ RUN pip install -r requirements.txt
 COPY source/. /app
 ENV PYTHONUNBUFFERED=1
 ENV TZ=Asia/Jakarta
+
+CMD ["python3", "main.py"]
