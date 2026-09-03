@@ -17,7 +17,7 @@ if __name__ == "__main__":
     schedule.every().day.at("16:00").do(run_thread, service.OHLCVdaily)
     schedule.every().friday.at("16:00").do(run_thread, service.FINANCEreport)
     
-    logger.info("Scheduler started. Waiting for next job at 5pm...")
+    logger.info("Scheduler started. Waiting for next job at 4pm...")
 
     while True:
         schedule.run_pending()
